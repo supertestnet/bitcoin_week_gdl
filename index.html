@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-size: 1.15rem;
+                font-family: Arial, sans-serif;
+            }
+            html {
+                max-width: 800px;
+                padding: 3rem 1rem;
+                margin: auto;
+                line-height: 1.25;
+                padding: 0;
+            }
+            body {
+                margin: 3rem 1rem;
+                word-wrap: break-word;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            input {
+                line-height: 1.25;
+                width: 100%;
+                height: 1.8rem;
+                font-size: 1.15rem;
+                border: 1px solid grey;
+            }
+            .hidden {
+                display: none !important;
+            }
+            @media screen and (max-width: 600px) {
+            }
+        </style>
+        <script>
+            var $ = document.querySelector.bind( document );
+            var $$ = document.querySelectorAll.bind( document );
+            var url_params = new URLSearchParams( window.location.search );
+            var url_keys = url_params.keys();
+            var $_GET = {}
+            for ( var key of url_keys ) $_GET[ key ] = url_params.get( key );
+        </script>
+    </head>
+    <body>
+        <h1>Bitcoin Week</h1>
+        <p>
+            Talentland is from the 21—24 of April. We have 4 events for Bitcoin Week during Talentland:
+        </p>
+        <p>
+            (1) We will have a stand at Talentland. We will also be sharing the booth with a bitcoin company called Kapitalex and we will be giving away bitcoin gifts, educational material, info about our community, and invitations to our other events during Bitcoin Week.
+        </p>
+        <p>
+            (2) Our regular BTC/GDL meetup is scheduled for April 22. This one will have a couple of workshops along with time for socializing and networking.
+        </p>
+        <p>
+            (3) A Carne Asada is scheduled for April 24. We're gonna have food catered, along with decorations, music, drinks, and a bitcoin pinata similar to this one: https://stacker.news/items/817809. This particular event is invite only and we're trying to create a list of 30 to 50 people to attend.
+        </p>
+        <p>
+            (4) The launch of the National Bitcoin Association of Mexico is an event to be held by Kapitalex. They want to start this organization and announce its creation during Talentland. I think it's a non-profit, but I don't know much about it yet, and I'm hoping to learn more as we approach launch day. The launch day is not yet scheduled.
+        </p>
+    </body>
+</html>
